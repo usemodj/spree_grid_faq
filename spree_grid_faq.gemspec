@@ -8,7 +8,8 @@ Gem::Specification.new do |s|
   s.version     = SpreeGridFaq::VERSION
   s.summary     = 'Spree Grid FAQ adds a Frequently Asked Question section to your spree store'
   s.description = 'Spree Grid FAQ adds a Frequently Asked Question section to your spree store.  It allows questions to be attached to existing taxons and products and was designe for Alarm Grid.'
-  s.required_ruby_version = '>= 1.8.7'
+  #s.required_ruby_version = '>= 1.8.7'
+  s.required_ruby_version = '>= 1.9.3'
 
   s.author    = 'Eric Hochberger'
   s.email     = 'eric@alarmgrid.com'
@@ -19,7 +20,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 1.1.0'
+  s.add_dependency 'spree_core'#, '~> 1.1.0'
   s.add_dependency 'haml'
 
   s.add_development_dependency 'capybara', '1.0.1'
