@@ -1,0 +1,10 @@
+<% if @product and not @product.questions.all.empty? %>
+<div class="alpha columns five omega">
+  <h6 class="product-section-title"><%=@product.name%> FAQ</h6>
+  <ul class="products-faq">
+    <% @product.questions.each do |question| %>
+      <li><%=link_to question.question, question %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>        
