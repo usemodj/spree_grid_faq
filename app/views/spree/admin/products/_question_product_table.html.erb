@@ -12,7 +12,7 @@
         <td><%= product.name %></td>
         <td><%= product_path product %></td>
         <td class="actions">
-          <%= link_to_delete product, :url => remove_admin_question_product_url(@question, product), :name => icon('delete') + ' ' + t(:remove) %>
+          <%= link_to_delete product, :url => remove_admin_question_product_url(@question, product), :name => "#{icon('delete')} #{t(:remove)}" %>
         </td>
       </tr>
     <% end %>
