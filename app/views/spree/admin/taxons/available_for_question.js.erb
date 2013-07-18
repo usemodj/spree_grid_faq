@@ -13,8 +13,7 @@
         <td><%= taxon.name %></td>
         <td><%= taxon_path taxon %></td>
         <td class="actions">
-          <%= link_to icon(:add) + ' ' + t(:select),
-                            select_admin_question_taxon_path(@question, taxon),
+          <%= link_to "#{icon(:add)} #{t(:select)}".html_safe, select_admin_question_taxon_path(@question, taxon.id),
                            :remote => true, :class => 'iconlink' %>
         </td>
       </tr>

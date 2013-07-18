@@ -33,7 +33,7 @@ module Spree
         @question.save
         @taxons = @question.taxons
 
-        respond_with(:admin, @taxon)
+        #respond_with(:admin, @taxon)
       end
     
       private
